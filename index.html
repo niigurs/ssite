@@ -19,7 +19,7 @@
 
         #workspace {
             width: 414px;
-            height: 646px; /* Уменьшенная высота рабочего пространства */
+            height: 696px; /* Обновленная высота рабочего пространства */
             position: relative;
             overflow: hidden;
             display: flex;
@@ -27,11 +27,17 @@
         }
 
         #top-space {
-            height: 100px; /* Высота отступа сверху */
+            height: 100px; /* Высота основного отступа сверху */
             width: 100%;
             background: url('https://i.postimg.cc/Zq0RrLDn/Nikkur.png') no-repeat center center;
             background-size: cover; /* Растягиваем изображение по ширине */
             position: relative;
+        }
+
+        #additional-space {
+            height: 50px; /* Высота дополнительного отступа */
+            width: 100%;
+            background-color: #c6cbde; /* Серый цвет фона */
         }
 
         #background {
@@ -48,9 +54,9 @@
 
         #loader, #main-menu {
             position: absolute;
-            top: 100px; /* Верхний отступ */
+            top: 150px; /* Верхний отступ обновлен */
             width: 100%;
-            height: calc(100% - 150px); /* Высота без верхнего и нижнего отступов */
+            height: calc(100% - 200px); /* Высота без верхнего и нижнего отступов */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -124,6 +130,7 @@
         <div id="top-space">
             <div id="click-counter">🍪 0</div> <!-- Перемещаем счетчик кликов сюда -->
         </div>
+        <div id="additional-space"></div> <!-- Новый отступ сверху -->
         <div id="background"></div>
         <div id="bottom-space"></div>
         <div id="loader">
