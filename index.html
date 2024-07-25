@@ -19,7 +19,7 @@
 
         #workspace {
             width: 414px;
-            height: 696px;
+            height: 646px; /* Уменьшенная высота рабочего пространства */
             position: relative;
             overflow: hidden;
             display: flex;
@@ -27,7 +27,7 @@
         }
 
         #top-space {
-            height: 100px; /* Уменьшенный отступ сверху */
+            height: 100px; /* Высота отступа сверху */
             width: 100%;
             background: url('https://i.postimg.cc/Zq0RrLDn/Nikkur.png') no-repeat center center;
             background-size: cover; /* Растягиваем изображение по ширине */
@@ -37,18 +37,18 @@
         #background {
             flex: 1;
             background: url('https://i.postimg.cc/q7hMCcJ4/2024-07-25-021234214.png') no-repeat center center;
-            background-size: 414px calc(696px - 100px); /* Высота без отступов сверху и снизу */
+            background-size: 414px calc(646px - 50px); /* Обновленная высота без отступов */
         }
 
         #bottom-space {
-            height: 50px;
+            height: 50px; /* Высота нижнего отступа */
             width: 100%;
             background-color: #743f17;
         }
 
         #loader, #main-menu {
             position: absolute;
-            top: 100px; /* Верхний отступ уменьшен до 100 пикселей */
+            top: 100px; /* Верхний отступ */
             width: 100%;
             height: calc(100% - 150px); /* Высота без верхнего и нижнего отступов */
             display: flex;
@@ -83,9 +83,9 @@
 
         #main-menu {
             display: none;
-            color: white; /* белый цвет текста для контраста */
+            color: white; /* Белый цвет текста для контраста */
             background: url('https://i.postimg.cc/q7hMCcJ4/2024-07-25-021234214.png') no-repeat center center;
-            background-size: 414px calc(696px - 100px);
+            background-size: 414px calc(646px - 50px); /* Обновленная высота фона */
         }
 
         #company-name {
